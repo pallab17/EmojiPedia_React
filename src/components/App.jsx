@@ -25,3 +25,36 @@ function App() {
       </h1>
 
       <dl className="dictionary">
+      {/* Method 3  map method
+        syntax of map method
+
+        {arrayname.map(function_name)}
+        eibar ei function_name r modhe gota array_name ta dhuke jacche 
+        i.e. fn_name can access everything of a_name
+
+        
+        */}
+        {emojipedia.map(createEntry)}
+
+        {/* method 1 */}
+
+        {/* <Entry img="😘" name="chumu" meaning="kiss u baby" /> */}
+
+        {/*method 2  */}
+
+        {/* <Entry
+          img={emojipedia[0].emoji}
+          name={emojipedia[0].name}
+          meaning={emojipedia[0].meaning}
+        />
+        <Entry
+          img={emojipedia[1].emoji}
+          name={emojipedia[1].name}
+          meaning={emojipedia[1].meaning}
+        />
+        <Entry
+          img={emojipedia[2].emoji}
+          name={emojipedia[2].name}
+          meaning={emojipedia[2].meaning}
+        /> */}
+
